@@ -9,6 +9,7 @@
         tools:context=".MainActivity">
 
     <ImageView
+            android:id="@+id/test"
             android:src="@drawable/ic_newspaper_svgrepo_com"
             android:layout_width="0dp"
             android:layout_height="0dp"

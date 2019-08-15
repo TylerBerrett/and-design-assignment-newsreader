@@ -12,9 +12,16 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val intent = Intent(this, ListPage::class.java)
+        val intent2 = Intent(this, vivek::class.java)
+
+
         button_log_in.setOnClickListener {
-            startActivity(intent)
+            if(input_username.text.toString().toLowerCase() == "vivek" && input_password.text.toString().toLowerCase() == "vishwanath"){
+                startActivity(intent2)
+            }
+            else startActivity(intent)
         }
+
 
     }
 }
